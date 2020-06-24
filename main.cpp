@@ -11,12 +11,13 @@ class CONRAN{
 public:
     struct Point A[100];
     int DoDai;
+    int Speed;
     CONRAN(){
         DoDai = 3;
         A[0].x = 10; A[0].y = 10;
         A[1].x = 11; A[1].y = 10;
         A[2].x = 12; A[2].y = 10;
-
+        Speed = 300;
     }
     void Ve(){
         for (int i = 0; i < DoDai; i++){
@@ -48,12 +49,12 @@ int main()
             if (t=='w') Huong = 3;
             if (t=='d') Huong = 0;
             if (t=='x') Huong = 1;
-
+            r.Speed--;
         }
         system("cls");
         r.Ve();
         r.DiChuyen(Huong);
-        Sleep(300);
+        Sleep(r.Speed);
     }
 
     return 0;
