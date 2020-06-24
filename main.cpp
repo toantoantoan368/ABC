@@ -22,7 +22,7 @@ public:
     void Ve(){
         for (int i = 0; i < DoDai; i++){
             gotoxy(A[i].x,A[i].y);
-            cout<<"X";
+            cout<<"A";
         }
     }
     void DiChuyen(int Huong){
